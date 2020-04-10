@@ -19,7 +19,7 @@
 
             context.beginPath()
 
-            context.lineCap = 'round'
+            context.lineCap = 'round' 
             context.lineJoin = 'round'
             const distance = getDistance(previousPoint, currentPoint)
             const opacity = Math.min(0.5, 1 / distance)
