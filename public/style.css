@@ -1,3 +1,17 @@
+@font-face {
+  font-family: Cloud;
+  src: url(./font/Cloud-Light.otf);
+}
+@font-face {
+  font-family: CloudB;
+  src: url(./font/Cloud-Bold.otf);
+}
+
+* {
+  font-family: Cloud;
+  box-sizing: border-box;
+}
+
 body {
   min-height: 98vh;
   height: auto;
