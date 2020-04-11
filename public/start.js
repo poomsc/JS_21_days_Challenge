@@ -11,7 +11,7 @@
         }
         const text = document.createTextNode(`${title}`)
 
-        link.href = `./../${folderName}/index.html`
+        link.href = `./${folderName}`
         link.appendChild(text)
 
         const cardElem = document.createElement('div')
