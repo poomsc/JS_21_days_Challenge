@@ -27,20 +27,32 @@ body {
   height: auto;
   width: auto;
   font-size: 0.8em;
-  color: black;
-  background-color: whitesmoke;
-
+  background-color: white;
+  border-color: #FFF2B5;
+  border-style: solid;
+  
   display: block;
   text-align: center;
   border-radius: 15px;
-  padding: 1em;
+  padding: 0.7em 1em;
   margin: 1em;
+  transition: 1.5s;
+}
+.content-block:hover {
+  border-color: #FFF2B5;
+  border-style: solid;
+  background-color: #FFF2B5;
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: flex-start;
-  }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}

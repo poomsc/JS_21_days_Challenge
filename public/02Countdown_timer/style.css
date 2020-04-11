@@ -1,32 +1,45 @@
+@font-face {
+  font-family: Cloud;
+  src: url(./../font/Cloud-Light.otf);
+}
+@font-face {
+  font-family: CloudB;
+  src: url(./../font/Cloud-Bold.otf);
+}
+
+* {
+  font-family: Cloud;
+  box-sizing: border-box;
+}
 body {
-    background-image: url('https://www.mdsci.org/wp-content/uploads/2019/11/MidnightNoon2020_web.jpg');
-    /* background-image: url('https://fdn.gsmarena.com/imgroot/news/19/12/happy-new-year/-1220x526/gsmarena_001.jpg'); */
-    background-position-x: center;
-    background-size: cover;
-    color: white;
+  background-image: url("https://www.mdsci.org/wp-content/uploads/2019/11/MidnightNoon2020_web.jpg");
+  /* background-image: url('https://fdn.gsmarena.com/imgroot/news/19/12/happy-new-year/-1220x526/gsmarena_001.jpg'); */
+  background-position-x: center;
+  background-size: cover;
+  color: white;
 
-    height: 98vh;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
+  height: 98vh;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
 
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1 {
-    font-size: 3em;
+  font-size: 3em;
 }
 
 .countdown {
-    display: inline-block;
-    font-size: 2em;
-    padding: 1em;
+  display: inline-block;
+  font-size: 2em;
+  padding: 1em;
 }
 
 .countdown span {
-    display: block;
-    font-size: 5rem;
+  display: block;
+  font-size: 5rem;
 }

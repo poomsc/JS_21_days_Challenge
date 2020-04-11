@@ -1,36 +1,49 @@
-body {
-    background: #3cbcfc url('./scene.png') repeat-x fixed bottom;
+@font-face {
+  font-family: Cloud;
+  src: url(./../font/Cloud-Light.otf);
+}
+@font-face {
+  font-family: CloudB;
+  src: url(./../font/Cloud-Bold.otf);
+}
 
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+* {
+  font-family: Cloud;
+  box-sizing: border-box;
+}
+body {
+  background: #3cbcfc url("./scene.png") repeat-x fixed bottom;
+
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .winning {
-    color: white;
-    font-size: 6em;
-    text-transform: uppercase;
-    opacity: 0;
+  color: white;
+  font-size: 6em;
+  text-transform: uppercase;
+  opacity: 0;
 }
 
 .duck {
-    background-repeat: no-repeat;
-    background-size: contain;
-    cursor: crosshair;
- 
-    position: absolute;
-    height: 120px;
-    width: 120px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: crosshair;
+
+  position: absolute;
+  height: 120px;
+  width: 120px;
 }
 
 .score {
-    position: fixed;
-    top: 0;
-    right: 30px;
-    display: inline;
-    text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  right: 30px;
+  display: inline;
+  text-transform: uppercase;
 }

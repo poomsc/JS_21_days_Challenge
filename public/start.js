@@ -34,7 +34,9 @@
             '03Async_Await',
             '04Eye_rolling', 
             '05Paint',
-            '06Duck_hunt'
+            '06Duck_hunt',
+            '07Konami_Code',
+            '08This',
         ]
         const cards = folderName.map(createCard)
         buildContainer(cards)
