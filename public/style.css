@@ -1,0 +1,32 @@
+body {
+  min-height: 98vh;
+  height: auto;
+  font-size: 2em;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  justify-content: space-around;
+}
+.content-block {
+  height: auto;
+  width: auto;
+  font-size: 0.8em;
+  color: black;
+  background-color: whitesmoke;
+
+  display: block;
+  text-align: center;
+  border-radius: 15px;
+  padding: 1em;
+  margin: 1em;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+  }

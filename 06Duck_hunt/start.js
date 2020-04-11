@@ -6,13 +6,12 @@
     function createDucks() {
         return [...Array(5)].map(() => {
             return {
-                x: random(0, window.innerWidth-120),
+                x: random(0, window.innerWidth - 120),
                 y: window.innerHeight,
                 speedX: random(-50, 50),
                 speedY: random(5, 10)
             }
         });
-        console.log(ducks)
     }
 
     function setupDuckElement(duck) {
@@ -34,7 +33,7 @@
     }
     function moveDuck(duckElem, duck) {
         const { left, top } = duckElem.getBoundingClientRect()
-        const outOfBoundX = duck.x < 0 || duck.x > window.innerWidth-120
+        const outOfBoundX = duck.x < 0 || duck.x > window.innerWidth - 120
         const outOfBoundY = duck.y < 0 || duck.y > window.innerHeight
 
         if (outOfBoundX) {
@@ -52,8 +51,10 @@
         duckElem.style.backgroundImage = getDuckBackgroundImage(duck, duckElem)
 
     }
-
     function shootDuck(event) {
+        const scoreElem = document.getElementById('score')
+        scoreElem.innerText = parseInt(scoreElem.innerText) + 1
+
         const duckElem = event.target
         duckElem.style.transition = 'top 2s'
         duckElem.style.top = `${window.innerHeight}px`
@@ -63,7 +64,7 @@
             document.body.removeChild(duckElem)
 
             const duck = document.querySelector('.duck')
-            if (!duck){
+            if (!duck) {
                 const winningElem = document.querySelector('.winning')
                 winningElem.style.opacity = 1
             }

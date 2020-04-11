@@ -26,3 +26,11 @@ body {
     height: 120px;
     width: 120px;
 }
+
+.score {
+    position: fixed;
+    top: 0;
+    right: 30px;
+    display: inline;
+    text-transform: uppercase;
+}
