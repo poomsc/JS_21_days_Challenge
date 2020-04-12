@@ -38,6 +38,7 @@
             '07 - Konami Code',
             '08 - This',
             '09 - Parallax Scalling',
+            '10 - Kanban Board',
         ]
         const cards = folderName.map(createCard)
         buildContainer(cards)
