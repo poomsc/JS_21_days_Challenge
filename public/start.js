@@ -5,9 +5,9 @@
         let title = folderName
         if (title[0] === "0") {
             title = title.substring(1)
-            title = '[Day ' + title[0] + '] ' + title.substring(1)
+            title = 'Day ' + title[0] + title.substring(1)
         } else {
-            title = '[Day ' + title.substring(0, 2) + '] ' + title.substring(2)
+            title = 'Day ' + title.substring(0, 2) + title.substring(2)
         }
         const text = document.createTextNode(`${title}`)
 
@@ -29,14 +29,15 @@
     }
     function run() {
         const folderName = [
-            '01Falling_Snow',
-            '02Countdown_timer',
-            '03Async_Await',
-            '04Eye_rolling', 
-            '05Paint',
-            '06Duck_hunt',
-            '07Konami_Code',
-            '08This',
+            '01 - Falling Snow',
+            '02 - Countdown timer',
+            '03 - Async Await',
+            '04 - Eye Rolling',
+            '05 - Watercolor Paint',
+            '06 - Duck Hunt',
+            '07 - Konami Code',
+            '08 - This',
+            '09 - Parallax Scalling',
         ]
         const cards = folderName.map(createCard)
         buildContainer(cards)
