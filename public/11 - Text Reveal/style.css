@@ -1,0 +1,49 @@
+@font-face {
+  font-family: Cloud;
+  src: url(./../font/Cloud-Light.otf);
+}
+@font-face {
+  font-family: CloudB;
+  src: url(./../font/Cloud-Bold.otf);
+}
+
+* {
+  font-family: Cloud;
+  box-sizing: border-box;
+}
+
+img {
+  height: 70vh;
+  width: 100vw;
+
+  object-fit: cover;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 20vh;
+
+  opacity: 0;
+  transform: translateY(25px);
+  transition: 0.4s all linear;
+}
+
+.text > h2 {
+  text-align: center;
+  margin: 0;
+}
+
+.text > p {
+  color: #888888;
+
+  margin: 0;
+  paint-order: 10px 30px;
+}
+
+.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}

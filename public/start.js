@@ -39,6 +39,8 @@
             '08 - This',
             '09 - Parallax Scalling',
             '10 - Kanban Board',
+            '11 - Text Reveal',
+            '12 - Air Quality Visualizer'
         ]
         const cards = folderName.map(createCard)
         buildContainer(cards)
