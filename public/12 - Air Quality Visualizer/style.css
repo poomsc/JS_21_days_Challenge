@@ -14,8 +14,10 @@
 
 :root {
   --good-aqi-color: #b0e767;
+  --low-aqi-color: #F6DB53;
   --medium-aqi-color: #fe9b56;
   --bad-aqi-color: #fe6a69;
+  --terrible-aqi-color: #BA69FF;
   --current-aqi-color: var(--good-aqi-color);
 }
 
@@ -30,8 +32,6 @@ body {
   text-align: center;
 
   color: #515154;
-
-  background: #43cea2;
   background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
 }
 
@@ -54,7 +54,6 @@ body {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-/* !! > คืออะไร */
 .aqi > h1 {
   margin: 0;
   font-size: 3em;
@@ -82,7 +81,6 @@ body {
   border-bottom-right-radius: 10px;
 }
 
-/* !! ดอกๆ กับ last-child คือ */
 .info > * {
   border-right: 1px solid #e6e6e6;
   padding: 20px;
