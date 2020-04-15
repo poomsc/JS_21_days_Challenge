@@ -1,0 +1,60 @@
+@font-face {
+  font-family: Cloud;
+  src: url(./../font/Cloud-Light.otf);
+}
+@font-face {
+  font-family: CloudB;
+  src: url(./../font/Cloud-Bold.otf);
+}
+
+* {
+  font-family: Cloud;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: gray;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.carousel > img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  
+  color: white;
+  font-size: 4em;
+  cursor: pointer;
+
+  opacity: 0.5;
+  transition: all 0.5s ease-in-out;
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.previous {
+  left: 0%;
+}
+
+.next {
+  right: 0%;
+}
