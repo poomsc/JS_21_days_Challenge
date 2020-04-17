@@ -43,7 +43,8 @@
             '12 - Air Quality Visualizer',
             '13 - JS weirdPart',
             '14 - Carousel',
-            '15 - Music Player'
+            '15 - Music Player',
+            '16 - Text to speech'
         ]
         const cards = folderName.map(createCard)
         buildContainer(cards)
