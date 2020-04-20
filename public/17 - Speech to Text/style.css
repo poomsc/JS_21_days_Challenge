@@ -1,0 +1,69 @@
+@font-face {
+  font-family: Cloud;
+  src: url(./../font/Cloud-Light.otf);
+}
+@font-face {
+  font-family: CloudB;
+  src: url(./../font/Cloud-Bold.otf);
+}
+
+* {
+  font-family: Cloud;
+  /* box-sizing: border-box; */
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.control {
+  border: none;
+  outline: none;
+}
+
+.title {
+  color: whitesmoke;
+  background-color: #EA4F3E;
+
+  width: 100vw;
+  margin: 0;
+  padding: 20px;
+
+  text-align: center;
+}
+
+
+.text {
+  width: 100vw;
+  padding: 20px;
+  flex: 1;
+}
+
+.record,
+.pause {
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10%;
+}
+
+
+.pause {
+  background: url('./pause.png') 0 0 / contain no-repeat;
+}
+
+.record {
+  background: url('./record.png') 0 0 / contain no-repeat;
+}
