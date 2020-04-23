@@ -46,16 +46,12 @@
             '15 - Music Player',
             '16 - Text to speech',
             '17 - Speech to Text',
-            '19 - Auto complete'
+            '19 - Auto complete',
+            '20 - Form Validation',
+            '21 - Infinite Scroll Gallery'
         ]
         const cards = folderName.map(createCard)
         buildContainer(cards)
-
-        // const testFolder = './../../Project';
-        // const fs = require('fs');
-
-        // let fileName = fs.readdirSync(testFolder)
-        // console.log(fileName)
     }
     run()
 })()
