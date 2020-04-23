@@ -45,7 +45,8 @@
             '14 - Carousel',
             '15 - Music Player',
             '16 - Text to speech',
-            '17 - Speech to Text'
+            '17 - Speech to Text',
+            '19 - Auto complete'
         ]
         const cards = folderName.map(createCard)
         buildContainer(cards)
